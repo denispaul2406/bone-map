@@ -28,4 +28,4 @@
 - **Ethics Statement:** *This study performed secondary technical validation solely using pre-existing, de-identified, publicly licensed open-access datasets (VSDFullBody Zenodo 8270365/8302449, PlaTiF Zenodo 18007397, ORMIR Zenodo 21284559, and PENGWIN26 Zenodo 19734383). No new human participants were recruited, no private clinical records or PHI were accessed, and IRB approval was not required.*
 - **Funding Statement:** *The authors received no external funding for this work.*
 - **Competing Interests:** *Software engineering and validation were conducted independently outside any commercial employer scope. The authors declare no competing interests.*
-- **Data Availability:** *All source code (MIT License) and reproducible benchmark scripts are publicly hosted at `https://github.com/denispaul2406/bone-map` and archived on Zenodo.*
+  - **Data Availability:** *All source code (MIT License) and reproducible benchmark scripts are archived on Zenodo (DOI: 10.5281/zenodo.24389254) and publicly hosted at `https://github.com/denispaul2406/bone-map`.*
