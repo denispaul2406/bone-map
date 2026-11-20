@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use BONE-MAP or its resolution-gated bone architecture pipeline, please cite it using this metadata."
+title: "BONE-MAP: Resolution-Gated 3D Cortical Architecture Quantification and Multi-Modal Fracture Recovery Workbench"
+version: 1.0.0
+date-released: 2026-11-20
+license: MIT
+repository-code: "https://github.com/denispaul2406/bone-map"
+authors:
+  - family-names: Paul
+    given-names: Denis
+    orcid: "https://orcid.org/0009-0008-1525-6822"
+    affiliation: "Independent Researcher, Bengaluru, Karnataka, India"
+  - family-names: Madapushi Deepak
+    given-names: Esha
+    affiliation: "College of Physiotherapy, Dayananda Sagar University, Bengaluru, Karnataka, India"
+keywords:
+  - tibial fracture
+  - cortical thickness
+  - TotalSegmentator
+  - mRUST
+  - physiotherapy recovery
+  - medical image analysis

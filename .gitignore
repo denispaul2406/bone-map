@@ -1,0 +1,31 @@
+# Python / Backend
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+backend/.venv/
+backend/*.log
+
+# Frontend / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/*.log
+frontend/.env*.local
+
+# Large public datasets & local runtime SQLite DB / patient outputs
+# (Reproduce via scripts/fetch_public_tibia.py and scripts/download_validation_suite.py)
+data/samples/
+data/cases/
+data/test_*/
+data/paper_bench_work/
+data/*.db
+data/*.sqlite*
+
+# Showcase render intermediates (keep final brag-output/brag.mp4, brag.jpg, brag-plan.md, share-copy.txt)
+brag-output/work/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.tmp

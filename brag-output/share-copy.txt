@@ -1,0 +1,5 @@
+Built BONE-MAP, a local-first fracture architecture & recovery workbench powered by 100% real public clinical imaging (`VSD-016` / `VSD-025` 3D tibia CT and `PLATIF-190`..`192` tibial plateau radiographs + coronal CT).
+
+On `VSD-016`, the `TotalSegmentator` appendicular pipeline achieves `0.917` Dice and `2.50 mm` mean cortical thickness (`0.00 mm` mean error), paired with resolution/BMD guardrails and a structured physiotherapy recovery track.
+
+Code & pipeline built with FastAPI, SQLite, Three.js WebGL, and Next.js.

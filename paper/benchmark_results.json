@@ -1,0 +1,1495 @@
+{
+  "vsd016": {
+    "voxel_spacing_mm": [
+      0.754,
+      0.754,
+      0.6
+    ],
+    "ground_truth": {
+      "cortical_thickness_mean_mm": 2.5,
+      "cortical_thickness_median_mm": 2.13,
+      "cortical_thickness_std_mm": 1.2,
+      "cortical_thickness_min_mm": 1.51,
+      "cortical_thickness_p90_mm": 4.26,
+      "cortical_hu_mean": 1245.4,
+      "cortical_hu_median": 1282.0,
+      "cortical_hu_iqr": 449.0,
+      "callus_hu_mean": null,
+      "bmd_calibrated": false,
+      "trabecular_status": "unavailable_clinical_ct_resolution",
+      "trabecular_thickness_mm": null,
+      "trabecular_separation_mm": null,
+      "voxel_spacing_mm": [
+        0.754,
+        0.754,
+        0.6
+      ],
+      "early_callus_volume_cm3": 0.0,
+      "hard_callus_volume_cm3": 0.0,
+      "total_callus_volume_cm3": 0.0,
+      "bone_length_mm": 297.0,
+      "coronal_angulation_deg": 2.4,
+      "sagittal_angulation_deg": 1.7,
+      "total_bone_volume_cm3": 96.22,
+      "bridged_quadrants_count": 4,
+      "quadrant_continuity_pct": {
+        "anterior": 100.0,
+        "posterior": 100.0,
+        "medial": 100.0,
+        "lateral": 100.0
+      },
+      "overall_cortical_continuity_pct": 100.0,
+      "fracture_gap_mm": 0.0,
+      "fragment_displacement_mm": 0.0,
+      "fragment_count": 1,
+      "metal_present": false,
+      "metal_volume_cm3": 0.0,
+      "metal_excluded_voxels": 0,
+      "segmentation_method": "manual_slicer_nifti",
+      "warnings": [
+        "Using researcher-corrected segmentation mask.",
+        "Trabecular thickness/separation gated off: voxel spacing 0.75 mm > 0.25 mm threshold."
+      ],
+      "axial_thickness_profile": [
+        {
+          "position_mm": 5.1,
+          "mean_thickness_mm": 1.34,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 15.6,
+          "mean_thickness_mm": 1.31,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 26.1,
+          "mean_thickness_mm": 1.2,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 36.6,
+          "mean_thickness_mm": 1.32,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 47.1,
+          "mean_thickness_mm": 1.47,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 57.6,
+          "mean_thickness_mm": 1.54,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 68.4,
+          "mean_thickness_mm": 1.69,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 78.9,
+          "mean_thickness_mm": 1.84,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 89.4,
+          "mean_thickness_mm": 2.07,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 99.9,
+          "mean_thickness_mm": 2.33,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 110.4,
+          "mean_thickness_mm": 2.5,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 120.9,
+          "mean_thickness_mm": 2.63,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 131.4,
+          "mean_thickness_mm": 2.81,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 142.2,
+          "mean_thickness_mm": 2.88,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 152.7,
+          "mean_thickness_mm": 2.95,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 163.2,
+          "mean_thickness_mm": 2.96,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 173.7,
+          "mean_thickness_mm": 2.9,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 184.2,
+          "mean_thickness_mm": 2.84,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 194.7,
+          "mean_thickness_mm": 2.77,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 205.2,
+          "mean_thickness_mm": 2.66,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 216.0,
+          "mean_thickness_mm": 2.54,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 226.5,
+          "mean_thickness_mm": 2.42,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 237.0,
+          "mean_thickness_mm": 2.16,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 247.5,
+          "mean_thickness_mm": 1.95,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 258.0,
+          "mean_thickness_mm": 1.87,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 268.5,
+          "mean_thickness_mm": 1.82,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 279.0,
+          "mean_thickness_mm": 1.72,
+          "callus_voxels": 0.0
+        },
+        {
+          "position_mm": 289.8,
+          "mean_thickness_mm": 1.69,
+          "callus_voxels": 0.0
+        }
+      ]
+    },
+    "fast_hu": {
+      "runtime_s": 1.97,
+      "tibia_dice_shell": 0.6344,
+      "tibia_dice": 0.7385,
+      "fibula_dice": 0.5559,
+      "metrics": {
+        "cortical_thickness_mean_mm": 2.51,
+        "cortical_thickness_median_mm": 2.13,
+        "cortical_thickness_std_mm": 1.2,
+        "cortical_thickness_min_mm": 1.51,
+        "cortical_thickness_p90_mm": 4.26,
+        "cortical_hu_mean": 1248.3,
+        "cortical_hu_median": 1285.0,
+        "cortical_hu_iqr": 444.0,
+        "callus_hu_mean": null,
+        "bmd_calibrated": false,
+        "trabecular_status": "unavailable_clinical_ct_resolution",
+        "trabecular_thickness_mm": null,
+        "trabecular_separation_mm": null,
+        "voxel_spacing_mm": [
+          0.754,
+          0.754,
+          0.6
+        ],
+        "early_callus_volume_cm3": 0.0,
+        "hard_callus_volume_cm3": 0.0,
+        "total_callus_volume_cm3": 0.0,
+        "bone_length_mm": 258.0,
+        "coronal_angulation_deg": 0.8,
+        "sagittal_angulation_deg": 2.0,
+        "total_bone_volume_cm3": 97.46,
+        "bridged_quadrants_count": 4,
+        "quadrant_continuity_pct": {
+          "anterior": 100.0,
+          "posterior": 100.0,
+          "medial": 100.0,
+          "lateral": 100.0
+        },
+        "overall_cortical_continuity_pct": 100.0,
+        "fracture_gap_mm": 0.0,
+        "fragment_displacement_mm": 0.0,
+        "fragment_count": 1,
+        "metal_present": false,
+        "metal_volume_cm3": 0.0,
+        "metal_excluded_voxels": 0,
+        "segmentation_method": "auto_lower_limb_hu_v1",
+        "warnings": [
+          "Trabecular thickness/separation gated off: voxel spacing 0.75 mm > 0.25 mm threshold."
+        ],
+        "axial_thickness_profile": [
+          {
+            "position_mm": 4.5,
+            "mean_thickness_mm": 1.42,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 13.5,
+            "mean_thickness_mm": 1.49,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 22.8,
+            "mean_thickness_mm": 1.56,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 32.1,
+            "mean_thickness_mm": 1.7,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 41.1,
+            "mean_thickness_mm": 1.82,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 50.4,
+            "mean_thickness_mm": 2.03,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 59.7,
+            "mean_thickness_mm": 2.25,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 68.7,
+            "mean_thickness_mm": 2.45,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 78.0,
+            "mean_thickness_mm": 2.55,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 87.3,
+            "mean_thickness_mm": 2.71,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 96.3,
+            "mean_thickness_mm": 2.82,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 105.6,
+            "mean_thickness_mm": 2.88,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 114.9,
+            "mean_thickness_mm": 2.95,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 124.2,
+            "mean_thickness_mm": 2.96,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 133.5,
+            "mean_thickness_mm": 2.93,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 142.5,
+            "mean_thickness_mm": 2.87,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 151.8,
+            "mean_thickness_mm": 2.82,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 161.1,
+            "mean_thickness_mm": 2.73,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 170.1,
+            "mean_thickness_mm": 2.65,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 179.4,
+            "mean_thickness_mm": 2.53,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 188.7,
+            "mean_thickness_mm": 2.43,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 197.7,
+            "mean_thickness_mm": 2.22,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 207.0,
+            "mean_thickness_mm": 1.99,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 216.3,
+            "mean_thickness_mm": 1.88,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 225.3,
+            "mean_thickness_mm": 1.86,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 234.6,
+            "mean_thickness_mm": 1.79,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 243.9,
+            "mean_thickness_mm": 1.72,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 253.2,
+            "mean_thickness_mm": 1.69,
+            "callus_voxels": 0.0
+          }
+        ]
+      }
+    },
+    "totalsegmentator": {
+      "runtime_s": 31.75,
+      "tibia_dice_shell": 0.6472,
+      "tibia_dice": 0.9173,
+      "fibula_dice": 0.8169,
+      "metrics": {
+        "cortical_thickness_mean_mm": 2.5,
+        "cortical_thickness_median_mm": 2.13,
+        "cortical_thickness_std_mm": 1.2,
+        "cortical_thickness_min_mm": 1.51,
+        "cortical_thickness_p90_mm": 4.26,
+        "cortical_hu_mean": 1248.3,
+        "cortical_hu_median": 1285.0,
+        "cortical_hu_iqr": 445.0,
+        "callus_hu_mean": null,
+        "bmd_calibrated": false,
+        "trabecular_status": "unavailable_clinical_ct_resolution",
+        "trabecular_thickness_mm": null,
+        "trabecular_separation_mm": null,
+        "voxel_spacing_mm": [
+          0.754,
+          0.754,
+          0.6
+        ],
+        "early_callus_volume_cm3": 0.0,
+        "hard_callus_volume_cm3": 0.0,
+        "total_callus_volume_cm3": 0.0,
+        "bone_length_mm": 288.0,
+        "coronal_angulation_deg": 0.7,
+        "sagittal_angulation_deg": 1.9,
+        "total_bone_volume_cm3": 183.25,
+        "bridged_quadrants_count": 4,
+        "quadrant_continuity_pct": {
+          "anterior": 100.0,
+          "posterior": 100.0,
+          "medial": 100.0,
+          "lateral": 100.0
+        },
+        "overall_cortical_continuity_pct": 100.0,
+        "fracture_gap_mm": 0.0,
+        "fragment_displacement_mm": 0.0,
+        "fragment_count": 1,
+        "metal_present": false,
+        "metal_volume_cm3": 0.0,
+        "metal_excluded_voxels": 0,
+        "segmentation_method": "totalsegmentator_appendicular_bones",
+        "warnings": [
+          "Trabecular thickness/separation gated off: voxel spacing 0.75 mm > 0.25 mm threshold."
+        ],
+        "axial_thickness_profile": [
+          {
+            "position_mm": 5.1,
+            "mean_thickness_mm": 1.33,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 15.3,
+            "mean_thickness_mm": 1.21,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 25.5,
+            "mean_thickness_mm": 1.27,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 35.7,
+            "mean_thickness_mm": 1.45,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 45.9,
+            "mean_thickness_mm": 1.52,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 56.1,
+            "mean_thickness_mm": 1.64,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 66.3,
+            "mean_thickness_mm": 1.78,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 76.5,
+            "mean_thickness_mm": 1.98,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 86.7,
+            "mean_thickness_mm": 2.23,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 96.9,
+            "mean_thickness_mm": 2.44,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 107.1,
+            "mean_thickness_mm": 2.56,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 117.3,
+            "mean_thickness_mm": 2.75,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 127.5,
+            "mean_thickness_mm": 2.83,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 137.7,
+            "mean_thickness_mm": 2.9,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 147.9,
+            "mean_thickness_mm": 2.96,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 158.1,
+            "mean_thickness_mm": 2.95,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 168.3,
+            "mean_thickness_mm": 2.87,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 178.5,
+            "mean_thickness_mm": 2.82,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 188.7,
+            "mean_thickness_mm": 2.72,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 198.9,
+            "mean_thickness_mm": 2.62,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 209.1,
+            "mean_thickness_mm": 2.5,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 219.3,
+            "mean_thickness_mm": 2.34,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 229.5,
+            "mean_thickness_mm": 2.09,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 239.7,
+            "mean_thickness_mm": 1.91,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 249.9,
+            "mean_thickness_mm": 1.86,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 260.1,
+            "mean_thickness_mm": 1.81,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 270.3,
+            "mean_thickness_mm": 1.72,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 280.5,
+            "mean_thickness_mm": 1.69,
+            "callus_voxels": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "vsd025": {
+    "voxel_spacing_mm": [
+      0.977,
+      0.977,
+      1.0
+    ],
+    "cross_method_tibia_dice": 0.3143,
+    "fast_hu": {
+      "runtime_s": 4.25,
+      "metrics": {
+        "cortical_thickness_mean_mm": 2.45,
+        "cortical_thickness_median_mm": 1.95,
+        "cortical_thickness_std_mm": 0.78,
+        "cortical_thickness_min_mm": 1.95,
+        "cortical_thickness_p90_mm": 3.91,
+        "cortical_hu_mean": 1263.1,
+        "cortical_hu_median": 1298.0,
+        "cortical_hu_iqr": 492.0,
+        "callus_hu_mean": null,
+        "bmd_calibrated": false,
+        "trabecular_status": "unavailable_clinical_ct_resolution",
+        "trabecular_thickness_mm": null,
+        "trabecular_separation_mm": null,
+        "voxel_spacing_mm": [
+          0.977,
+          0.977,
+          1.0
+        ],
+        "early_callus_volume_cm3": 0.0,
+        "hard_callus_volume_cm3": 0.0,
+        "total_callus_volume_cm3": 0.0,
+        "bone_length_mm": 293.0,
+        "coronal_angulation_deg": 0.6,
+        "sagittal_angulation_deg": 2.3,
+        "total_bone_volume_cm3": 96.13,
+        "bridged_quadrants_count": 4,
+        "quadrant_continuity_pct": {
+          "anterior": 100.0,
+          "posterior": 100.0,
+          "medial": 100.0,
+          "lateral": 100.0
+        },
+        "overall_cortical_continuity_pct": 100.0,
+        "fracture_gap_mm": 0.0,
+        "fragment_displacement_mm": 0.0,
+        "fragment_count": 1,
+        "metal_present": false,
+        "metal_volume_cm3": 0.0,
+        "metal_excluded_voxels": 0,
+        "segmentation_method": "auto_lower_limb_hu_v1",
+        "warnings": [
+          "Trabecular thickness/separation gated off: voxel spacing 1.0 mm > 0.25 mm threshold."
+        ],
+        "axial_thickness_profile": [
+          {
+            "position_mm": 5.0,
+            "mean_thickness_mm": 1.95,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 15.0,
+            "mean_thickness_mm": 1.95,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 25.5,
+            "mean_thickness_mm": 1.96,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 36.0,
+            "mean_thickness_mm": 1.97,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 46.5,
+            "mean_thickness_mm": 2.0,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 57.0,
+            "mean_thickness_mm": 2.05,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 67.5,
+            "mean_thickness_mm": 2.12,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 78.0,
+            "mean_thickness_mm": 2.17,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 88.5,
+            "mean_thickness_mm": 2.27,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 99.0,
+            "mean_thickness_mm": 2.37,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 109.5,
+            "mean_thickness_mm": 2.44,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 120.0,
+            "mean_thickness_mm": 2.49,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 130.5,
+            "mean_thickness_mm": 2.55,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 141.0,
+            "mean_thickness_mm": 2.57,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 151.0,
+            "mean_thickness_mm": 2.56,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 161.5,
+            "mean_thickness_mm": 2.64,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 172.0,
+            "mean_thickness_mm": 2.68,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 182.5,
+            "mean_thickness_mm": 2.71,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 193.0,
+            "mean_thickness_mm": 2.72,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 203.5,
+            "mean_thickness_mm": 2.71,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 214.0,
+            "mean_thickness_mm": 2.6,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 224.5,
+            "mean_thickness_mm": 2.63,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 235.0,
+            "mean_thickness_mm": 2.56,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 245.5,
+            "mean_thickness_mm": 2.5,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 256.0,
+            "mean_thickness_mm": 2.41,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 266.5,
+            "mean_thickness_mm": 2.28,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 277.0,
+            "mean_thickness_mm": 2.13,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 287.5,
+            "mean_thickness_mm": 2.07,
+            "callus_voxels": 0.0
+          }
+        ]
+      }
+    },
+    "totalsegmentator": {
+      "runtime_s": 31.82,
+      "metrics": {
+        "cortical_thickness_mean_mm": 2.46,
+        "cortical_thickness_median_mm": 1.95,
+        "cortical_thickness_std_mm": 0.77,
+        "cortical_thickness_min_mm": 1.95,
+        "cortical_thickness_p90_mm": 3.91,
+        "cortical_hu_mean": 1292.7,
+        "cortical_hu_median": 1321.0,
+        "cortical_hu_iqr": 536.0,
+        "callus_hu_mean": null,
+        "bmd_calibrated": false,
+        "trabecular_status": "unavailable_clinical_ct_resolution",
+        "trabecular_thickness_mm": null,
+        "trabecular_separation_mm": null,
+        "voxel_spacing_mm": [
+          0.977,
+          0.977,
+          1.0
+        ],
+        "early_callus_volume_cm3": 0.0,
+        "hard_callus_volume_cm3": 0.0,
+        "total_callus_volume_cm3": 0.0,
+        "bone_length_mm": 330.0,
+        "coronal_angulation_deg": 16.4,
+        "sagittal_angulation_deg": 15.0,
+        "total_bone_volume_cm3": 515.32,
+        "bridged_quadrants_count": 4,
+        "quadrant_continuity_pct": {
+          "anterior": 100.0,
+          "posterior": 100.0,
+          "medial": 100.0,
+          "lateral": 100.0
+        },
+        "overall_cortical_continuity_pct": 100.0,
+        "fracture_gap_mm": 341.84,
+        "fragment_displacement_mm": 116.71,
+        "fragment_count": 2,
+        "metal_present": false,
+        "metal_volume_cm3": 0.0,
+        "metal_excluded_voxels": 0,
+        "segmentation_method": "totalsegmentator_appendicular_bones",
+        "warnings": [
+          "Trabecular thickness/separation gated off: voxel spacing 1.0 mm > 0.25 mm threshold."
+        ],
+        "axial_thickness_profile": [
+          {
+            "position_mm": 5.5,
+            "mean_thickness_mm": 1.98,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 17.0,
+            "mean_thickness_mm": 1.96,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 29.0,
+            "mean_thickness_mm": 1.99,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 41.0,
+            "mean_thickness_mm": 1.98,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 52.5,
+            "mean_thickness_mm": 1.99,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 64.0,
+            "mean_thickness_mm": 2.04,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 76.0,
+            "mean_thickness_mm": 2.1,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 88.0,
+            "mean_thickness_mm": 2.17,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 100.0,
+            "mean_thickness_mm": 2.28,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 111.5,
+            "mean_thickness_mm": 2.36,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 123.0,
+            "mean_thickness_mm": 2.44,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 135.0,
+            "mean_thickness_mm": 2.51,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 147.0,
+            "mean_thickness_mm": 2.58,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 159.0,
+            "mean_thickness_mm": 2.62,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 170.5,
+            "mean_thickness_mm": 2.69,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 182.0,
+            "mean_thickness_mm": 2.67,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 194.0,
+            "mean_thickness_mm": 2.68,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 206.0,
+            "mean_thickness_mm": 2.66,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 217.5,
+            "mean_thickness_mm": 2.68,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 229.0,
+            "mean_thickness_mm": 2.65,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 241.0,
+            "mean_thickness_mm": 2.58,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 253.0,
+            "mean_thickness_mm": 2.46,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 265.0,
+            "mean_thickness_mm": 2.42,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 276.5,
+            "mean_thickness_mm": 2.33,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 288.0,
+            "mean_thickness_mm": 2.27,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 300.0,
+            "mean_thickness_mm": 2.17,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 312.0,
+            "mean_thickness_mm": 2.12,
+            "callus_voxels": 0.0
+          },
+          {
+            "position_mm": 324.0,
+            "mean_thickness_mm": 2.07,
+            "callus_voxels": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "ormir_microct": {
+    "specimen": "CHAR_NOCMP_020 (Zenodo 21284559)",
+    "dimensions_zyx": [
+      64,
+      156,
+      296
+    ],
+    "voxel_spacing_mm": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "bone_volume_fraction": 0.59,
+    "ipl_reference_thickness_mean_mm": 0.2414,
+    "ipl_reference_thickness_std_mm": 0.0533,
+    "bonemap_trabecular_status": "measured_high_resolution",
+    "bonemap_tb_th_mm": 0.124,
+    "bonemap_tb_sp_mm": 0.148,
+    "abs_error_vs_ipl_mm": 0.1174
+  },
+  "platif": {
+    "n_patients": 25,
+    "n_with_coronal_ct": 12,
+    "n_multi_view_xray": 18,
+    "age_mean": 44.1,
+    "age_std": 19.0,
+    "age_min": 16,
+    "age_max": 88,
+    "gender_counts": {
+      "Male": 21,
+      "Female": 4
+    },
+    "side_counts": {
+      "R": 15,
+      "L": 10
+    },
+    "schatzker_counts": {
+      "Normal": 16,
+      "Type 1": 1,
+      "Type 2": 3,
+      "Type 4": 2,
+      "Type 5": 1,
+      "Type 6": 2
+    },
+    "tibia_mask_pct_mean": 8.32,
+    "tibia_mask_pct_std": 2.78,
+    "rows": [
+      {
+        "patient_id": "PLATIF-190",
+        "age": 27,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Type 5",
+        "num_xray_views": 1,
+        "has_coronal_ct": true,
+        "xray_h": 2819,
+        "xray_w": 2036,
+        "tibia_mask_px": 482169,
+        "tibia_mask_pct": 8.4,
+        "xray_mean_norm": 0.1512,
+        "xray_std_norm": 0.1614,
+        "coronal_ct_h": 440,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.24,
+        "coronal_ct_std": 0.2
+      },
+      {
+        "patient_id": "PLATIF-191",
+        "age": 42,
+        "gender": "Female",
+        "side": "L",
+        "schatzker": "Type 4",
+        "num_xray_views": 1,
+        "has_coronal_ct": true,
+        "xray_h": 4020,
+        "xray_w": 4020,
+        "tibia_mask_px": 684363,
+        "tibia_mask_pct": 4.23,
+        "xray_mean_norm": 0.2287,
+        "xray_std_norm": 0.3209,
+        "coronal_ct_h": 571,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.2,
+        "coronal_ct_std": 0.17
+      },
+      {
+        "patient_id": "PLATIF-192",
+        "age": 17,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Type 6",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 2203,
+        "xray_w": 1449,
+        "tibia_mask_px": 391993,
+        "tibia_mask_pct": 12.28,
+        "xray_mean_norm": 0.2713,
+        "xray_std_norm": 0.3477,
+        "coronal_ct_h": 575,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.27,
+        "coronal_ct_std": 0.2
+      },
+      {
+        "patient_id": "PLATIF-193",
+        "age": 62,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Type 2",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 2819,
+        "xray_w": 1340,
+        "tibia_mask_px": 497559,
+        "tibia_mask_pct": 13.17,
+        "xray_mean_norm": 0.2741,
+        "xray_std_norm": 0.315,
+        "coronal_ct_h": 776,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.29,
+        "coronal_ct_std": 0.16
+      },
+      {
+        "patient_id": "PLATIF-195",
+        "age": 43,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 4869,
+        "xray_w": 4020,
+        "tibia_mask_px": 1475313,
+        "tibia_mask_pct": 7.54,
+        "xray_mean_norm": 0.2273,
+        "xray_std_norm": 0.3056,
+        "coronal_ct_h": 381,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.2,
+        "coronal_ct_std": 0.21
+      },
+      {
+        "patient_id": "PLATIF-196",
+        "age": 36,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": false,
+        "xray_h": 4147,
+        "xray_w": 4025,
+        "tibia_mask_px": 926558,
+        "tibia_mask_pct": 5.55,
+        "xray_mean_norm": 0.1882,
+        "xray_std_norm": 0.2623,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-197",
+        "age": 60,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 1,
+        "has_coronal_ct": false,
+        "xray_h": 2816,
+        "xray_w": 1467,
+        "tibia_mask_px": 445599,
+        "tibia_mask_pct": 10.79,
+        "xray_mean_norm": 0.2506,
+        "xray_std_norm": 0.2548,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-198",
+        "age": 88,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 1,
+        "has_coronal_ct": false,
+        "xray_h": 2819,
+        "xray_w": 1543,
+        "tibia_mask_px": 430425,
+        "tibia_mask_pct": 9.9,
+        "xray_mean_norm": 0.2418,
+        "xray_std_norm": 0.2263,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-199",
+        "age": 31,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 4,
+        "has_coronal_ct": false,
+        "xray_h": 4300,
+        "xray_w": 2074,
+        "tibia_mask_px": 746274,
+        "tibia_mask_pct": 8.37,
+        "xray_mean_norm": 0.2051,
+        "xray_std_norm": 0.2537,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-200",
+        "age": 61,
+        "gender": "Female",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 1,
+        "has_coronal_ct": true,
+        "xray_h": 2744,
+        "xray_w": 1512,
+        "tibia_mask_px": 281802,
+        "tibia_mask_pct": 6.79,
+        "xray_mean_norm": 0.2612,
+        "xray_std_norm": 0.2383,
+        "coronal_ct_h": 570,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.21,
+        "coronal_ct_std": 0.18
+      },
+      {
+        "patient_id": "PLATIF-201",
+        "age": 19,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": false,
+        "xray_h": 2127,
+        "xray_w": 1884,
+        "tibia_mask_px": 288311,
+        "tibia_mask_pct": 7.19,
+        "xray_mean_norm": 0.1653,
+        "xray_std_norm": 0.2496,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-202",
+        "age": 31,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Type 6",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 2536,
+        "xray_w": 1641,
+        "tibia_mask_px": 475314,
+        "tibia_mask_pct": 11.42,
+        "xray_mean_norm": 0.3379,
+        "xray_std_norm": 0.3003,
+        "coronal_ct_h": 415,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.19,
+        "coronal_ct_std": 0.2
+      },
+      {
+        "patient_id": "PLATIF-203",
+        "age": 45,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": false,
+        "xray_h": 4869,
+        "xray_w": 4020,
+        "tibia_mask_px": 1193988,
+        "tibia_mask_pct": 6.1,
+        "xray_mean_norm": 0.158,
+        "xray_std_norm": 0.2447,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-204",
+        "age": 72,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Type 4",
+        "num_xray_views": 1,
+        "has_coronal_ct": true,
+        "xray_h": 2417,
+        "xray_w": 1449,
+        "tibia_mask_px": 433939,
+        "tibia_mask_pct": 12.39,
+        "xray_mean_norm": 0.2473,
+        "xray_std_norm": 0.238,
+        "coronal_ct_h": 606,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.16,
+        "coronal_ct_std": 0.14
+      },
+      {
+        "patient_id": "PLATIF-205",
+        "age": 73,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 3,
+        "has_coronal_ct": false,
+        "xray_h": 4869,
+        "xray_w": 4020,
+        "tibia_mask_px": 1229242,
+        "tibia_mask_pct": 6.28,
+        "xray_mean_norm": 0.1442,
+        "xray_std_norm": 0.2293,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-206",
+        "age": 37,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 5,
+        "has_coronal_ct": false,
+        "xray_h": 4869,
+        "xray_w": 4020,
+        "tibia_mask_px": 841900,
+        "tibia_mask_pct": 4.3,
+        "xray_mean_norm": 0.273,
+        "xray_std_norm": 0.2761,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-208",
+        "age": 69,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Type 2",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 2819,
+        "xray_w": 1569,
+        "tibia_mask_px": 483630,
+        "tibia_mask_pct": 10.93,
+        "xray_mean_norm": 0.1959,
+        "xray_std_norm": 0.2742,
+        "coronal_ct_h": 457,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.15,
+        "coronal_ct_std": 0.14
+      },
+      {
+        "patient_id": "PLATIF-210",
+        "age": 26,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Type 1",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 2489,
+        "xray_w": 1565,
+        "tibia_mask_px": 447417,
+        "tibia_mask_pct": 11.49,
+        "xray_mean_norm": 0.227,
+        "xray_std_norm": 0.2302,
+        "coronal_ct_h": 495,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.21,
+        "coronal_ct_std": 0.21
+      },
+      {
+        "patient_id": "PLATIF-211",
+        "age": 16,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Normal",
+        "num_xray_views": 3,
+        "has_coronal_ct": false,
+        "xray_h": 4020,
+        "xray_w": 4869,
+        "tibia_mask_px": 841393,
+        "tibia_mask_pct": 4.3,
+        "xray_mean_norm": 0.2312,
+        "xray_std_norm": 0.3206,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-212",
+        "age": 32,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 1,
+        "has_coronal_ct": false,
+        "xray_h": 4300,
+        "xray_w": 2154,
+        "tibia_mask_px": 714714,
+        "tibia_mask_pct": 7.72,
+        "xray_mean_norm": 0.193,
+        "xray_std_norm": 0.2484,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-214",
+        "age": 61,
+        "gender": "Female",
+        "side": "L",
+        "schatzker": "Normal",
+        "num_xray_views": 4,
+        "has_coronal_ct": true,
+        "xray_h": 3384,
+        "xray_w": 2700,
+        "tibia_mask_px": 425723,
+        "tibia_mask_pct": 4.66,
+        "xray_mean_norm": 0.1813,
+        "xray_std_norm": 0.2333,
+        "coronal_ct_h": 588,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.28,
+        "coronal_ct_std": 0.18
+      },
+      {
+        "patient_id": "PLATIF-215",
+        "age": 41,
+        "gender": "Male",
+        "side": "L",
+        "schatzker": "Type 2",
+        "num_xray_views": 2,
+        "has_coronal_ct": true,
+        "xray_h": 3873,
+        "xray_w": 2641,
+        "tibia_mask_px": 1237962,
+        "tibia_mask_pct": 12.1,
+        "xray_mean_norm": 0.2469,
+        "xray_std_norm": 0.2603,
+        "coronal_ct_h": 537,
+        "coronal_ct_w": 512,
+        "coronal_ct_mean": 0.2,
+        "coronal_ct_std": 0.19
+      },
+      {
+        "patient_id": "PLATIF-216",
+        "age": 28,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 3,
+        "has_coronal_ct": false,
+        "xray_h": 2819,
+        "xray_w": 1282,
+        "tibia_mask_px": 296215,
+        "tibia_mask_pct": 8.2,
+        "xray_mean_norm": 0.1657,
+        "xray_std_norm": 0.1989,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-217",
+        "age": 37,
+        "gender": "Male",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": false,
+        "xray_h": 2810,
+        "xray_w": 1566,
+        "tibia_mask_px": 339179,
+        "tibia_mask_pct": 7.71,
+        "xray_mean_norm": 0.1627,
+        "xray_std_norm": 0.22,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      },
+      {
+        "patient_id": "PLATIF-218",
+        "age": 49,
+        "gender": "Female",
+        "side": "R",
+        "schatzker": "Normal",
+        "num_xray_views": 2,
+        "has_coronal_ct": false,
+        "xray_h": 2819,
+        "xray_w": 1685,
+        "tibia_mask_px": 294604,
+        "tibia_mask_pct": 6.2,
+        "xray_mean_norm": 0.2507,
+        "xray_std_norm": 0.2583,
+        "coronal_ct_h": null,
+        "coronal_ct_w": null,
+        "coronal_ct_mean": null,
+        "coronal_ct_std": null
+      }
+    ]
+  }
+}
