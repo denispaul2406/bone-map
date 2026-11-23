@@ -1,6 +1,7 @@
 # BONE-MAP — Resolution-Gated 3D Cortical Architecture & Multi-Modal Fracture Recovery Workbench
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24389254.svg)](https://doi.org/10.5281/zenodo.24389254)
+[![Preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24455205.svg)](https://doi.org/10.5281/zenodo.24455205)
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24389254.svg)](https://doi.org/10.5281/zenodo.24389254)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg)](backend/pyproject.toml)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-000000.svg)](frontend/package.json)
@@ -9,7 +10,7 @@
 
 ![BONE-MAP Showcase](brag-output/brag.jpg)
 
-> **Preprint Manuscript:** [paper/bonemap_preprint.pdf](paper/bonemap_preprint.pdf) &nbsp;|&nbsp; **Demo Video:** [brag-output/brag.mp4](brag-output/brag.mp4) &nbsp;|&nbsp; **DOI:** [`10.5281/zenodo.24389254`](https://doi.org/10.5281/zenodo.24389254)
+> **Preprint Paper DOI:** [`10.5281/zenodo.24455205`](https://doi.org/10.5281/zenodo.24455205) ([PDF](paper/bonemap_preprint.pdf)) &nbsp;|&nbsp; **Software DOI:** [`10.5281/zenodo.24389254`](https://doi.org/10.5281/zenodo.24389254) &nbsp;|&nbsp; **Demo Video:** [brag-output/brag.mp4](brag-output/brag.mp4)
 
 ---
 
@@ -111,6 +112,15 @@ cd backend
 
 See [CITATION.cff](CITATION.cff) or cite:
 ```bibtex
+@misc{paul_bonemap_preprint_2026,
+  author       = {Paul, Denis and Madapushi Deepak, Esha},
+  title        = {BONE-MAP: A Resolution-Gated Open-Source Architecture for 3D Cortical Fracture Quantification and Multi-Modal Rehabilitation Tracking},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.24455205},
+  url          = {https://doi.org/10.5281/zenodo.24455205}
+}
+
 @software{paul_bonemap_2026,
   author       = {Paul, Denis and Madapushi Deepak, Esha},
   title        = {BONE-MAP: Resolution-Gated 3D Cortical Architecture Quantification and Multi-Modal Fracture Recovery Workbench},
