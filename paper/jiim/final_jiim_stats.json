@@ -1,0 +1,162 @@
+{
+  "vsd_pooled": {
+    "n_limbs": 18,
+    "ts_tibia_dice_mean": 0.763,
+    "ts_tibia_dice_sd": 0.2917,
+    "ts_tibia_dice_median": 0.9157,
+    "ts_tibia_dice_iqr": [
+      0.6489,
+      0.9482
+    ],
+    "hu_tibia_dice_mean": 0.4461,
+    "hu_tibia_dice_sd": 0.3941,
+    "hu_tibia_dice_median": 0.7344,
+    "ts_fibula_dice_mean": 0.6973,
+    "ts_fibula_dice_median": 0.8267,
+    "ts_hd95_mean": 7.9,
+    "ts_hd95_sd": 11.86,
+    "ts_hd95_median": 3.73,
+    "ts_hd95_iqr": [
+      1.56,
+      8.61
+    ],
+    "hu_hd95_median": 16.13,
+    "ts_assd_mean": 3.09,
+    "ts_assd_median": 0.81,
+    "cortical_bias_mm": -0.0289,
+    "cortical_sd_mm": 0.0598,
+    "cortical_mae_mm": 0.0289,
+    "cortical_loa_95": [
+      -0.1461,
+      0.0883
+    ],
+    "ts_runtime_mean_s": 36.26,
+    "hu_runtime_mean_s": 2.32
+  },
+  "vsd_standard_spacing": {
+    "n_limbs": 10,
+    "ts_tibia_dice_mean": 0.9465,
+    "ts_tibia_dice_sd": 0.0211,
+    "ts_tibia_dice_median": 0.948,
+    "ts_tibia_dice_iqr": [
+      0.9309,
+      0.9654
+    ],
+    "hu_tibia_dice_mean": 0.7858,
+    "hu_tibia_dice_sd": 0.0583,
+    "hu_tibia_dice_median": 0.7574,
+    "ts_fibula_dice_mean": 0.8853,
+    "ts_fibula_dice_median": 0.8964,
+    "ts_hd95_mean": 2.05,
+    "ts_hd95_sd": 1.09,
+    "ts_hd95_median": 1.59,
+    "ts_hd95_iqr": [
+      1.3,
+      2.88
+    ],
+    "hu_hd95_median": 14.81,
+    "ts_assd_mean": 0.63,
+    "ts_assd_median": 0.61,
+    "cortical_bias_mm": -0.005,
+    "cortical_sd_mm": 0.0053,
+    "cortical_mae_mm": 0.005,
+    "cortical_loa_95": [
+      -0.0153,
+      0.0053
+    ],
+    "ts_runtime_mean_s": 39.93,
+    "hu_runtime_mean_s": 4.08
+  },
+  "vsd_coarse_spacing": {
+    "n_limbs": 8,
+    "ts_tibia_dice_mean": 0.5338,
+    "ts_tibia_dice_sd": 0.3129,
+    "ts_tibia_dice_median": 0.6133,
+    "ts_tibia_dice_iqr": [
+      0.4117,
+      0.7493
+    ],
+    "hu_tibia_dice_mean": 0.0215,
+    "hu_tibia_dice_sd": 0.0444,
+    "hu_tibia_dice_median": 0.0,
+    "ts_fibula_dice_mean": 0.4622,
+    "ts_fibula_dice_median": 0.4666,
+    "ts_hd95_mean": 15.22,
+    "ts_hd95_sd": 15.16,
+    "ts_hd95_median": 9.66,
+    "ts_hd95_iqr": [
+      7.29,
+      13.57
+    ],
+    "hu_hd95_median": 24.98,
+    "ts_assd_mean": 6.17,
+    "ts_assd_median": 2.46,
+    "cortical_bias_mm": -0.0587,
+    "cortical_sd_mm": 0.0825,
+    "cortical_mae_mm": 0.0587,
+    "cortical_loa_95": [
+      -0.2205,
+      0.103
+    ],
+    "ts_runtime_mean_s": 31.66,
+    "hu_runtime_mean_s": 0.12
+  },
+  "wilcoxon_pooled_dice_p": 3.814697265625e-05,
+  "wilcoxon_pooled_hd95_p": 0.0341796875,
+  "wilcoxon_std_dice_p": 0.001953125,
+  "ormir_microct": {
+    "specimen": "CHAR_NOCMP_020 (Zenodo 21284559)",
+    "dimensions_zyx": [
+      64,
+      156,
+      296
+    ],
+    "voxel_spacing_mm": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "bone_volume_fraction": 0.59,
+    "ipl_reference_thickness_mean_mm": 0.2414,
+    "ipl_reference_thickness_std_mm": 0.0533,
+    "bonemap_trabecular_status": "measured_high_resolution",
+    "bonemap_tb_th_mm": 0.222,
+    "bonemap_tb_sp_mm": 0.351,
+    "abs_error_vs_ipl_mm": 0.0194
+  },
+  "platif_186": {
+    "n_total": 186,
+    "n_coronal_ct": 150,
+    "coronal_ct_pct": 80.6,
+    "n_multi_view": 144,
+    "multi_view_pct": 77.4,
+    "age_known_n": 134,
+    "age_mean": 41.9,
+    "age_std": 17.7,
+    "age_min": 16,
+    "age_max": 88,
+    "mask_pct_mean": 8.52,
+    "mask_pct_std": 2.71,
+    "schatzker_counts": {
+      "Normal": 53,
+      "Unrecorded": 52,
+      "Type 2": 21,
+      "Type 1": 21,
+      "Type 6": 18,
+      "Type 5": 8,
+      "Type 3": 7,
+      "Type 4": 6
+    },
+    "gender_counts": {
+      "Male": 109,
+      "Unrecorded": 52,
+      "Female": 25
+    },
+    "side_counts": {
+      "R": 70,
+      "L": 62,
+      "Unrecorded": 52,
+      "R and L": 2
+    }
+  }
+}

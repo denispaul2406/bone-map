@@ -68,6 +68,19 @@ class BoneArchitectureMetrics:
         return asdict(self)
 
 
+def _medial_ridge_thickness_values(
+    mask: np.ndarray,
+    sampling_zyx: tuple[float, float, float],
+    ridge_fraction: float,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Compute physical thickness values along interior medial-axis ridge voxels."""
+    edt = ndimage.distance_transform_edt(mask, sampling=sampling_zyx)
+    local_ridge = ndimage.maximum_filter(edt, size=3)
+    core_voxels = mask & (edt >= ridge_fraction * local_ridge) & (edt > 0)
+    vals = (2.0 * edt[core_voxels]) if np.any(core_voxels) else (2.0 * edt[mask])
+    return edt, vals
+
+
 def quantify_bone_architecture(
     volume: LoadedCTVolume,
     seg: SegmentationResult,
@@ -87,16 +100,8 @@ def quantify_bone_architecture(
     # --- 1. Cortical thickness via 3D Euclidean Distance Transform ---
     thickness_map_mm = np.zeros_like(hu, dtype=np.float32)
     if np.any(cortical_mask):
-        # Distance from each cortical voxel to nearest non-cortical voxel (periosteum or endosteum)
-        # Full wall thickness ~ 2 * max medial-axis distance; estimate robustly via outer-to-inner shell EDT
-        edt = ndimage.distance_transform_edt(cortical_mask, sampling=(dz, dy, dx))
-        # Local maximum / ridge proxy * 2 gives true cortical wall thickness across a shell
-        # Use local 3x3x3 max on cortical voxels for wall thickness, avoiding edge-voxel underestimation
-        local_ridge = ndimage.maximum_filter(edt, size=3)
+        edt, vals = _medial_ridge_thickness_values(cortical_mask, (dz, dy, dx), ridge_fraction=0.45)
         thickness_map_mm[cortical_mask] = (2.0 * edt[cortical_mask]).astype(np.float32)
-        # Sample interior/ridge values (> 0.5 * local_ridge) so boundary voxels don't pull mean down
-        core_voxels = cortical_mask & (edt >= 0.45 * local_ridge) & (edt > 0)
-        vals = (2.0 * edt[core_voxels]) if np.any(core_voxels) else thickness_map_mm[cortical_mask]
         cort_mean = float(np.mean(vals))
         cort_median = float(np.median(vals))
         cort_std = float(np.std(vals))
@@ -127,16 +132,16 @@ def quantify_bone_architecture(
             medullary = tibia_mask & (~cortical_mask) & (~seg.metal_exclusion_mask)
             trab_bone = medullary & (hu >= 180.0)
             trab_marrow = medullary & (hu < 180.0)
-            tb_th = (
-                float(2.0 * np.mean(ndimage.distance_transform_edt(trab_bone, sampling=(dz, dy, dx))[trab_bone]))
-                if np.any(trab_bone)
-                else None
-            )
-            tb_sp = (
-                float(2.0 * np.mean(ndimage.distance_transform_edt(trab_marrow, sampling=(dz, dy, dx))[trab_marrow]))
-                if np.any(trab_marrow)
-                else None
-            )
+            if np.any(trab_bone):
+                _, tb_th_vals = _medial_ridge_thickness_values(trab_bone, (dz, dy, dx), ridge_fraction=0.90)
+                tb_th = float(np.mean(tb_th_vals))
+            else:
+                tb_th = None
+            if np.any(trab_marrow):
+                _, tb_sp_vals = _medial_ridge_thickness_values(trab_marrow, (dz, dy, dx), ridge_fraction=0.90)
+                tb_sp = float(np.mean(tb_sp_vals))
+            else:
+                tb_sp = None
         else:
             trab_status = "no_tibial_mask_for_trabecular_roi"
             tb_th = None

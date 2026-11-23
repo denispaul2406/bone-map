@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blinded Manuscript — Journal of Imaging Informatics in Medicine</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.78in 0.78in 0.80in 0.78in;
+      @bottom-center {
+        content: "Blinded Manuscript (For Peer Review) — Page " counter(page) " of " counter(pages);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 8.5pt;
+        color: #6B7280;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 10.2pt;
+      line-height: 1.5;
+      color: #111827;
+      margin: 0;
+    }
+    .blind-bar {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8.3pt;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0071E3;
+      border-bottom: 1.5px solid #E5E7EB;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+    }
+    h1.title {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 16.5pt;
+      line-height: 1.26;
+      font-weight: 700;
+      color: #0F172A;
+      margin: 0 0 12px 0;
+    }
+    .abstract-box {
+      background: #F8FAFC;
+      border-left: 3.5px solid #0071E3;
+      padding: 12px 15px;
+      margin: 10px 0 14px 0;
+    }
+    .abstract-box h2 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 10.5pt;
+      text-transform: uppercase;
+      margin: 0 0 6px 0;
+    }
+    .keywords {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 9pt;
+      color: #374151;
+      margin-top: 8px;
+    }
+    h2.sec {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 12pt;
+      font-weight: 700;
+      color: #0F172A;
+      border-bottom: 1px solid #E5E7EB;
+      padding-bottom: 3px;
+      margin: 16px 0 8px 0;
+      break-after: avoid;
+    }
+    h3.sub {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 10.3pt;
+      font-weight: 700;
+      color: #1E293B;
+      margin: 11px 0 4px 0;
+      break-after: avoid;
+    }
+    p { margin: 0 0 8px 0; text-align: justify; }
+    ul, ol { margin: 4px 0 9px 18px; padding: 0; }
+    li { margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8.5pt;
+      break-inside: avoid;
+    }
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: 700;
+      font-size: 9.1pt;
+      color: #0F172A;
+      margin-bottom: 5px;
+    }
+    th, td {
+      border-top: 1px solid #CBD5E1;
+      border-bottom: 1px solid #CBD5E1;
+      padding: 5px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #F1F5F9;
+      font-weight: 700;
+      border-top: 1.5px solid #334155;
+      border-bottom: 1.5px solid #334155;
+    }
+    .fig-box {
+      margin: 12px 0 14px 0;
+      padding: 8px;
+      border: 1px solid #E5E7EB;
+      background: #FFFFFF;
+      break-inside: avoid;
+    }
+    .fig-box img { width: 100%; height: auto; display: block; }
+    .fig-cap {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 8.5pt;
+      color: #374151;
+      line-height: 1.38;
+      margin-top: 6px;
+    }
+    .refs { font-size: 8.7pt; line-height: 1.42; padding-left: 18px; }
+    .refs li { margin-bottom: 4px; }
+    code { font-family: 'Consolas', monospace; font-size: 8.8pt; background: #F1F5F9; padding: 1px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div class="blind-bar">
+    <span>Blinded Manuscript — Double-Blind Peer Review</span>
+    <span>Journal of Imaging Informatics in Medicine</span>
+  </div>
+
+  <h1 class="title">
+    BONE-MAP: A Resolution-Gated Open-Source Architecture for 3D Cortical Fracture Quantification and Multi-Modal Rehabilitation Tracking
+  </h1>
+
+  <div class="abstract-box">
+    <h2>Abstract</h2>
+    <p id="abstract-body">
+      <strong>Purpose:</strong> Rehabilitation following tibial fractures requires aligning 3D structural bone assessments with progressive weight-bearing milestones. However, automated bone-analysis tools frequently apply micro-CT trabecular algorithms to coarse clinical CT scans or report uncalibrated Hounsfield units (HU) as volumetric bone mineral density (BMD), creating physical reliability hazards.
+      <strong>Methods:</strong> We developed BONE-MAP, an open-source, resolution-gated architecture integrating TotalSegmentator appendicular segmentation, a CPU HU fallback, 3D Slicer label-map round-trip, fibula-referenced four-quadrant cortical bridging, and physiotherapy tracking (%BW, active ROM, VAS, LEFS, clinician mRUST). Hard guardrails lock trabecular metrics above 0.25 mm spacing and uncalibrated BMD. Validation spanned 18 clinical lower-limb CTs with 3D Slicer ground truth, 0.020 mm micro-CT, and 186 tibial plateau fracture cases.
+      <strong>Results:</strong> Across all 18 CT limbs, TotalSegmentator outperformed the CPU fallback in Tibia Dice (median 0.9157 vs 0.7344, Wilcoxon p = 3.82 &times; 10<sup>&minus;5</sup>) and HD95 (median 3.73 vs 16.14 mm, p = 0.034), reaching 0.9465 &plusmn; 0.0211 Dice and 0.63 &plusmn; 0.15 mm ASSD on &le;0.85 mm scans. Bland–Altman cortical thickness bias was &minus;0.029 &plusmn; 0.060 mm. Medial-ridge trabecular refinement cut 0.020 mm micro-CT error from 0.1174 mm to 0.0194 mm (0.222 vs 0.2414 mm reference).
+      <strong>Conclusion:</strong> BONE-MAP provides a reproducible, physically honest software baseline uniting multi-modal tibial morphometry with rehabilitation telemetry while preventing sub-resolution or uncalibrated metric fabrication.
+    </p>
+    <div class="keywords">
+      <strong>Keywords:</strong> Tibial fracture; Cortical thickness; Resolution gate; TotalSegmentator; Physiotherapy rehabilitation.
+    </div>
+  </div>
+
+  <h2 class="sec">1. Introduction</h2>
+  <p>
+    Long-bone fractures of the tibia—spanning high-energy diaphyseal trauma and intra-articular tibial plateau fractures—undergo prolonged secondary healing in which mechanical loading directly stimulates bone remodeling. In routine clinical workflows, structural imaging assessment and functional physiotherapy rehabilitation remain disconnected. Orthopedic and radiologic evaluations rely on qualitative CT slice inspection or ordinal radiographic scales such as the Radiographic Union Score for Tibial Fractures (RUST) and Modified RUST (mRUST) [2], [3], while physiotherapists must prescribe weight-bearing progression (% body weight), knee range of motion (ROM), pain visual analog scores (VAS), and Lower Extremity Functional Scale (LEFS) milestones [9] without spatially resolved cortical wall thickness or quadrant-bridging metrics.
+  </p>
+  <p>
+    Existing quantitative imaging pipelines present two major pitfalls when translated from laboratory micro-CT to routine clinical care. First, partial-volume effects (PVE) at clinical CT voxel spacings (0.5–1.0 mm) blur individual trabeculae (~0.05–0.15 mm) well beyond physical resolvability [5], causing naive micro-CT trabecular thickness (Tb.Th) and separation (Tb.Sp) algorithms to emit physically meaningless numbers. Even dedicated high-resolution peripheral quantitative CT (HR-pQCT, 61–82 &mu;m) requires explicit resolution protocols to mitigate boundary-averaging bias [4], [5]. Second, converting single-energy Hounsfield units (HU) into volumetric bone mineral density (mg/cm&sup3;) without an in-scan calibration phantom violates quantitative CT densitometry standards [6].
+  </p>
+  <p>
+    To address both the interdisciplinary structural–rehabilitation gap and these physical reliability hazards, we designed and validated BONE-MAP (code and datasets anonymized during review): an open-source, local-first imaging informatics architecture uniting deep-learning appendicular CT segmentation [1], multi-modal tibial plateau review, longitudinal physiotherapy tracking, and strict physical guardrails.
+  </p>
+
+  <h2 class="sec">2. Materials and Methods</h2>
+
+  <h3 class="sub">2.1 Software Architecture and Dual-Track Clinical Schema</h3>
+  <p>
+    BONE-MAP employs a decoupled Python 3.12 backend (FastAPI, SQLAlchemy, SQLite, SimpleITK [8], SciPy, scikit-image) and TypeScript/React frontend (Next.js 16, Three.js WebGL), as illustrated in Figure 1. Incoming DICOM series or NIfTI volumes undergo protected health information (PHI) tag stripping and canonical Left–Posterior–Superior (LPS) reorientation. Each patient record links serial encounters (timepoints <code>T0..Tn</code>) storing both structural imaging runs and clinician-entered functional outcomes (%BW tolerance, active knee flexion/extension ROM, Pain VAS 0–10, LEFS 0–80, and 4-cortex clinician mRUST 4–16). Every mutation writes to an immutable audit log, and longitudinal CSV exports escape spreadsheet formula prefixes (<code>=</code>, <code>+</code>, <code>-</code>, <code>@</code>).
+  </p>
+
+  <div class="fig-box">
+    <img src="./figures/fig1_architecture_pipeline.png" alt="BONE-MAP dual-track architecture and physical guardrail diagram" />
+    <div class="fig-cap">
+      <strong>Figure 1.</strong> End-to-end BONE-MAP architecture connecting multi-modal CT/micro-CT/radiograph inputs, interchangeable segmentation engines, physical truth guardrails (0.25 mm Nyquist gate, calibration lock, hardware ring exclusion, and OOD volume check), and visit-aligned physiotherapy telemetry.
+    </div>
+  </div>
+
+  <h3 class="sub">2.2 Segmentation Backends and Cortical Morphometry</h3>
+  <p>
+    Three interchangeable segmentation paths are supported: (1) GPU-accelerated <code>TotalSegmentator</code> (<code>appendicular_bones</code> task) isolating discrete tibia and fibula labels [1]; (2) a zero-dependency CPU morphology fallback (<code>auto_lower_limb</code>); and (3) bidirectional 3D Slicer NIfTI label-map exchange [7]. Hardware voxels (&ge;2500 HU) trigger a dilated metal-exclusion mask to suppress metallic streak bias prior to attenuation summarization.
+  </p>
+  <p>
+    For cortical wall thickness, an anisotropic 3D Euclidean Distance Transform (EDT) is evaluated across the cortical shell (<code>&ge;750 HU</code> inside the tibial mask). To avoid boundary-voxel underestimation, interior medial-ridge core voxels satisfying <code>edt &ge; 0.45 &times; local_ridge</code> within a 3&times;3&times;3 neighborhood (scaled by 2.0) are aggregated into whole-bone mean, median, 5th-percentile, and 90th-percentile thickness alongside a 28-bin distal-to-proximal axial profile. Fragment alignment (coronal/sagittal angulation) uses Singular Value Decomposition (SVD) principal axes, and four-quadrant cortical continuity (Anterior, Posterior, Medial, Lateral) references the co-registered fibular centroid vector to preserve anatomical laterality across left and right limbs.
+  </p>
+
+  <h3 class="sub">2.3 Physical Guardrails and Medial-Ridge Trabecular Refinement</h3>
+  <ul>
+    <li><strong>Nyquist Trabecular Gate (&le;0.25 mm):</strong> Medullary trabecular computation executes strictly when <code>max(dx, dy, dz) &le; 0.25 mm</code>; coarser clinical CT scans lock trabecular status to <code>unavailable_clinical_ct_resolution</code>. For sub-0.25 mm specimens, we refined our initial full-voxel EDT mean (<code>v1.0</code>) to medial-ridge core sampling (<code>edt &ge; 0.90 &times; local_ridge</code>, <code>v1.1</code>) to approximate Hildebrand–R&uuml;egsegger maximal-inscribed-sphere local thickness [4] without quadratic dilation runtime.</li>
+    <li><strong>Phantom-Free BMD Lock:</strong> Without external hydroxyapatite phantom calibration [6], <code>bmd_calibrated</code> stays <code>False</code> and HU statistics remain strictly uncalibrated.</li>
+    <li><strong>Anatomical Scope Guardrail &amp; Non-Fabrication:</strong> Non-tibial trauma volumes (e.g., bilateral pelvic fracture CTs) are excluded rather than producing corrupt metrics, and clinician mRUST scores are never synthesized from 2D pixels.</li>
+  </ul>
+
+  <h3 class="sub">2.4 Multi-Cohort Evaluation Protocol</h3>
+  <p>
+    All validation scripts were automated across four public open-access Zenodo collections totaling <code>N = 205</code> anatomical/patient evaluations:
+  </p>
+  <ol>
+    <li><strong>3D Lower-Limb CT + Slicer Ground Truth (<code>VSDFullBody</code>, <code>N = 18</code> limbs across 9 subjects [10]):</strong> Matched Shanks-Feet CT NRRD volumes and expert 3D Slicer segmentations (subjects 002, 006, 010, 014, 015, 016, 017, 019, 023; phantom scans excluded). Slicer masks were resampled via nearest-neighbor onto canonical LPS CT grids and slice-filled to match whole-bone solid tibia ground truth. We computed Tibia/Fibula Dice, 95% Hausdorff Distance (HD95), Average Symmetric Surface Distance (ASSD), and Bland–Altman cortical thickness agreement, stratified by in-plane spacing (&le;0.85 mm vs &gt;0.85 mm) with paired Wilcoxon signed-rank tests.</li>
+    <li><strong>Micro-CT Trabecular Reference (<code>ORMIR CHAR_NOCMP_020.AIM</code> [12]):</strong> Scanco AIM v020 specimen (64 &times; 156 &times; 296 voxels, VAX F-float decoded isotropic 0.020 mm spacing, 59.0% solid fraction) containing embedded Scanco IPL <code>D3P_Dt_Obj</code> sphere-fit reference thickness (0.2414 &plusmn; 0.0533 mm).</li>
+    <li><strong>Multi-Modal Tibial Plateau Cohort (<code>PlaTiF Parts 1–5</code>, <code>N = 186</code> patients [11]):</strong> Full public clinical cohort with AP radiographs, expert proximal-tibia masks, optional paired 2D coronal CT slices, and Schatzker I–VI classifications.</li>
+    <li><strong>Negative Anatomical Control (<code>PENGWIN26</code> [13]):</strong> Clinical pelvic trauma CT (1257 cm&sup3;) verifying non-tibial anatomical rejection.</li>
+  </ol>
+
+  <h2 class="sec">3. Results</h2>
+
+  <h3 class="sub">3.1 3D Segmentation Accuracy Across 18 Lower-Limb CTs</h3>
+  <p>
+    Table 1 and Figure 2 summarize segmentation accuracy across all 18 evaluated lower limbs. Pooled across the entire cohort, <code>TotalSegmentator</code> significantly outperformed the CPU HU fallback in both Tibia Dice (median 0.9157 [IQR 0.6489–0.9482] vs 0.7344 [0.0000–0.7584], Wilcoxon <code>p = 3.82 &times; 10<sup>&minus;5</sup></code>) and HD95 boundary error (median 3.73 mm vs 16.14 mm, <code>p = 0.034</code>). Across standard-resolution scans (&le;0.85 mm in-plane spacing, <code>n = 10</code> limbs, 0.520–0.826 mm), <code>TotalSegmentator</code> achieved 0.9465 &plusmn; 0.0211 Tibia Dice, 0.8853 &plusmn; 0.0361 Fibula Dice, 2.05 &plusmn; 1.09 mm HD95, and sub-voxel ASSD of 0.63 &plusmn; 0.15 mm. Conversely, on coarse (&gt;0.85 mm, <code>n = 8</code>) osteopenic scans with thinner cortices (1.28–1.67 mm), single-threshold CPU HU collapsed on 6/8 limbs (0.0000 Dice) due to partial-volume attenuation loss below 750 HU, whereas <code>TotalSegmentator</code> preserved structural localization (median 0.6133 Dice, 9.66 mm HD95), with two severe localization outliers (006_R: 0.0005 Dice; 014_R: 0.1346 Dice).
+  </p>
+
+  <table>
+    <caption>Table 1. Quantitative 3D segmentation performance across 18 lower-limb CT volumes stratified by in-plane voxel spacing.</caption>
+    <thead>
+      <tr>
+        <th>Cohort Stratum &amp; Method</th>
+        <th>Limbs (n)</th>
+        <th>Tibia Dice Mean &plusmn; SD</th>
+        <th>Tibia Dice Median [IQR]</th>
+        <th>Fibula Dice Mean</th>
+        <th>HD95 (mm) Median [IQR]</th>
+        <th>ASSD (mm) Mean / Median</th>
+        <th>Runtime (s) Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pooled TotalSegmentator AI</td>
+        <td>18</td>
+        <td><strong>0.7630 &plusmn; 0.2917</strong></td>
+        <td><strong>0.9157</strong> [0.649–0.948]</td>
+        <td><strong>0.6973</strong></td>
+        <td><strong>3.73</strong> [1.56–8.61]</td>
+        <td>3.09 / 0.81</td>
+        <td>36.26</td>
+      </tr>
+      <tr>
+        <td>Pooled Fast HU Fallback</td>
+        <td>18</td>
+        <td>0.4461 &plusmn; 0.3941</td>
+        <td>0.7344 [0.000–0.758]</td>
+        <td>&mdash;</td>
+        <td>16.14 [11.93–18.23]</td>
+        <td>&mdash;</td>
+        <td>2.32</td>
+      </tr>
+      <tr>
+        <td>Standard (&le;0.85 mm) TotalSeg</td>
+        <td>10</td>
+        <td><strong>0.9465 &plusmn; 0.0211</strong></td>
+        <td><strong>0.9480</strong> [0.931–0.965]</td>
+        <td><strong>0.8853</strong></td>
+        <td><strong>1.59</strong> [1.30–2.88]</td>
+        <td><strong>0.63 / 0.61</strong></td>
+        <td>39.93</td>
+      </tr>
+      <tr>
+        <td>Standard (&le;0.85 mm) Fast HU</td>
+        <td>10</td>
+        <td>0.7858 &plusmn; 0.0583</td>
+        <td>0.7574 [0.750–0.814]</td>
+        <td>&mdash;</td>
+        <td>14.81 [11.40–17.12]</td>
+        <td>&mdash;</td>
+        <td>4.08</td>
+      </tr>
+      <tr>
+        <td>Coarse (&gt;0.85 mm) TotalSeg</td>
+        <td>8</td>
+        <td>0.5338 &plusmn; 0.3129</td>
+        <td>0.6133 [0.412–0.749]</td>
+        <td>0.4622</td>
+        <td>9.66 [7.29–13.57]</td>
+        <td>6.17 / 2.46</td>
+        <td>31.66</td>
+      </tr>
+      <tr>
+        <td>Coarse (&gt;0.85 mm) Fast HU</td>
+        <td>8</td>
+        <td>0.0215 &plusmn; 0.0444</td>
+        <td>0.0000 [0.000–0.014]</td>
+        <td>&mdash;</td>
+        <td>24.98</td>
+        <td>&mdash;</td>
+        <td>0.12</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fig-box">
+    <img src="./figures/fig2_vsd18_segmentation.png" alt="3D Tibia Dice and HD95 comparison across spacing strata" />
+    <div class="fig-cap">
+      <strong>Figure 2.</strong> (A) Paired Tibia Dice distributions across standard (&le;0.85 mm, n=10) and coarse (&gt;0.85 mm, n=8) clinical CT strata (pooled Wilcoxon p = 3.82 &times; 10<sup>&minus;5</sup>). (B) Surface boundary HD95 error comparison demonstrating median 16.14 mm to 2.26 mm reduction on matched finite pairs (p = 0.034).
+    </div>
+  </div>
+
+  <h3 class="sub">3.2 Bland–Altman Cortical Thickness Agreement</h3>
+  <p>
+    Despite coarse-scan boundary degradation, cortical thickness extraction demonstrated sub-0.1 mm agreement across all 18 limbs (Table 2, Figure 3). Pooled Bland–Altman bias (TotalSegmentator minus Slicer GT) was &minus;0.0289 &plusmn; 0.0598 mm (95% Limits of Agreement: &minus;0.1461 to +0.0883 mm). On standard-spacing CTs (n = 10), absolute mean error dropped to 0.0050 mm (bias &minus;0.0050 &plusmn; 0.0053 mm, LOA &minus;0.0153 to +0.0053 mm), matching distal-to-proximal anatomical gradients on 28-bin axial profiles (1.21 mm distal epiphysis to 2.96 mm mid-diaphysis).
+  </p>
+
+  <table>
+    <caption>Table 2. Bland–Altman agreement for mean cortical wall thickness (TotalSegmentator vs published Slicer GT).</caption>
+    <thead>
+      <tr>
+        <th>Cohort Stratum</th>
+        <th>Limbs (n)</th>
+        <th>Mean Bias &plusmn; SD (mm)</th>
+        <th>Mean Absolute Error (mm)</th>
+        <th>95% Limits of Agreement (mm)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pooled Cohort</td>
+        <td>18</td>
+        <td>&minus;0.0289 &plusmn; 0.0598</td>
+        <td>0.0289</td>
+        <td>[&minus;0.1461, +0.0883]</td>
+      </tr>
+      <tr>
+        <td>Standard Spacing (&le;0.85 mm)</td>
+        <td>10</td>
+        <td>&minus;0.0050 &plusmn; 0.0053</td>
+        <td>0.0050</td>
+        <td>[&minus;0.0153, +0.0053]</td>
+      </tr>
+      <tr>
+        <td>Coarse Spacing (&gt;0.85 mm)</td>
+        <td>8</td>
+        <td>&minus;0.0587 &plusmn; 0.0825</td>
+        <td>0.0587</td>
+        <td>[&minus;0.2205, +0.1030]</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fig-box">
+    <img src="./figures/fig3_bland_altman_cortical.png" alt="Bland-Altman cortical thickness agreement and axial profile" />
+    <div class="fig-cap">
+      <strong>Figure 3.</strong> (A) Bland–Altman plot of mean cortical thickness across all 18 limbs (bias &minus;0.029 mm; 95% LOA [&minus;0.146, +0.088] mm). (B) Representative 28-bin distal-to-proximal cortical thickness profile (Subject 016_R) closely tracking published Slicer ground truth.
+    </div>
+  </div>
+
+  <h3 class="sub">3.3 Nyquist Resolution Gate and Micro-CT Medial-Ridge Refinement</h3>
+  <p>
+    Every clinical CT volume in the 18-limb benchmark (0.520–0.977 mm in-plane spacing) exceeded the 0.25 mm Nyquist cutoff and locked trabecular outputs (<code>unavailable_clinical_ct_resolution</code>). On the 0.020 mm <code>ORMIR CHAR_NOCMP_020</code> specimen (Table 3, Figure 4), the gate automatically unlocked (<code>measured_high_resolution</code>). Replacing raw full-voxel EDT averaging (<code>0.124 mm</code>, absolute error <code>0.1174 mm</code>) with 0.90-ridge medial projection yielded <code>Tb.Th = 0.222 mm</code> and <code>Tb.Sp = 0.351 mm</code>—reducing error against Scanco IPL sphere-fit reference (<code>0.2414 &plusmn; 0.0533 mm</code>) by 83.5% to <code>0.0194 mm</code> (&lt;1 voxel).
+  </p>
+
+  <table>
+    <caption>Table 3. Micro-CT trabecular validation (0.020 mm ORMIR) and bidirectional resolution gate outcomes.</caption>
+    <thead>
+      <tr>
+        <th>Specimen / Cohort</th>
+        <th>Max Voxel Spacing (mm)</th>
+        <th>Gate State</th>
+        <th>Computed Metric</th>
+        <th>Reference / Error</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ORMIR <code>CHAR_NOCMP_020</code> (Baseline v1.0 EDT)</td>
+        <td>0.020</td>
+        <td>OPEN</td>
+        <td>Tb.Th = 0.124 mm</td>
+        <td>IPL Ref: 0.2414 mm (Err: 0.1174 mm)</td>
+      </tr>
+      <tr>
+        <td>ORMIR <code>CHAR_NOCMP_020</code> (Refined v1.1 Ridge)</td>
+        <td>0.020</td>
+        <td>OPEN</td>
+        <td><strong>Tb.Th = 0.222 mm</strong>; Tb.Sp = 0.351 mm</td>
+        <td>IPL Ref: 0.2414 mm (<strong>Err: 0.0194 mm</strong>)</td>
+      </tr>
+      <tr>
+        <td>Clinical CT Cohort (18 limbs)</td>
+        <td>0.600–0.977</td>
+        <td>LOCKED</td>
+        <td>Tb.Th / Tb.Sp = None; Cortical MAE = 0.029 mm</td>
+        <td>&gt;0.25 mm cutoff (2.4–3.9&times;)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fig-box">
+    <img src="./figures/fig4_resolution_gate_ormir.png" alt="Micro-CT trabecular refinement and Nyquist resolution gate" />
+    <div class="fig-cap">
+      <strong>Figure 4.</strong> (A) Comparison of baseline full-voxel EDT, refined medial-ridge EDT (0.222 mm), and Scanco IPL sphere-fit gold standard (0.241 mm) on 0.020 mm micro-CT. (B) Resolution gate activation across micro-CT vs standard and coarse clinical CT cohorts.
+    </div>
+  </div>
+
+  <h3 class="sub">3.4 Full Multi-Modal Clinical Fracture Cohort (PlaTiF, N = 186) &amp; Verification</h3>
+  <p>
+    Evaluating all five archives of <code>PlaTiF</code> (<code>N = 186</code> patients, Table 4, Figure 5) confirmed scalable multi-modal ingestion: 150/186 (80.6%) patients carried paired 2D coronal CT slices alongside AP radiographs and expert tibia masks, and 144/186 (77.4%) included multi-view radiographs. Among patients with recorded demographics (n = 134), mean age was 41.9 &plusmn; 17.7 years (range 16–88; 109 male, 25 female; 70 right, 62 left, 2 bilateral), spanning 53 normal controls and 81 classified tibial plateau fractures (Schatzker Types I: 21, II: 21, III: 7, IV: 6, V: 8, VI: 18; 52 unrecorded). Expert tibia masks covered 8.52 &plusmn; 2.71% of radiograph area. Automated unit tests (5/5 passing) verified security contracts, CSV escaping, fibula-referenced polarity, resolution gating, and longitudinal deltas alongside a verified Next.js 16 production build.
+  </p>
+
+  <table>
+    <caption>Table 4. Complete PlaTiF Parts 1–5 multi-modal clinical cohort summary (N = 186).</caption>
+    <thead>
+      <tr>
+        <th>Cohort Characteristic</th>
+        <th>Measured Value across Parts 1–5</th>
+        <th>Operational Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Patients / Demographics</td>
+        <td>N = 186 (Recorded n = 134: 109 M, 25 F; 41.9 &plusmn; 17.7 yrs)</td>
+        <td>52 records unlabelled in upstream metadata</td>
+      </tr>
+      <tr>
+        <td>Schatzker &amp; Control Breakdown</td>
+        <td>Normal: 53; Fractured: 81 (I:21, II:21, III:7, IV:6, V:8, VI:18)</td>
+        <td>Laterality: 70 R, 62 L, 2 bilateral, 52 unrecorded</td>
+      </tr>
+      <tr>
+        <td>Imaging Modalities</td>
+        <td>AP X-Ray + Mask: 186/186 (100%); Coronal CT: 150/186 (80.6%)</td>
+        <td>Multi-view radiographs: 144/186 (77.4%)</td>
+      </tr>
+      <tr>
+        <td>Expert Tibia Mask Area</td>
+        <td>8.52 &plusmn; 2.71% of radiograph FOV</td>
+        <td>Paired with structured clinician mRUST (4–16) UI</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fig-box">
+    <img src="./figures/fig5_platif_186_cohort.png" alt="Full PlaTiF N=186 cohort distribution and demographics" />
+    <div class="fig-cap">
+      <strong>Figure 5.</strong> (A) Case distribution across all 186 patients in PlaTiF Parts 1–5 spanning normal controls and Schatzker I–VI plateau fractures. (B) Age distribution versus radiograph tibia mask coverage stratified by sex.
+    </div>
+  </div>
+
+  <h2 class="sec">4. Discussion &amp; Limitations</h2>
+  <p>
+    Our stratified 18-limb benchmark demonstrates why open clinical bone-informatics platforms require both modern deep segmentation and explicit failure-mode transparency. On routine &le;0.85 mm lower-limb CTs, <code>TotalSegmentator</code> [1] achieved sub-voxel surface agreement (0.63 mm ASSD, 0.9465 Dice) and near-exact cortical thickness estimation (0.005 mm MAE). More importantly, testing coarser (&gt;0.85 mm) osteopenic scans exposed the fragility of fixed-HU thresholding: partial-volume dilution lowered peak cortical attenuation below 750 HU and collapsed CPU segmentation on 6/8 limbs, while deep segmentation still maintained 0.0587 mm mean cortical accuracy except for two localization failures (006_R, 014_R). Inspecting such failures reinforces why bidirectional 3D Slicer mask round-trip editing [7] must remain integrated into clinical research workflows.
+  </p>
+  <p>
+    Similarly, calibrating the high-resolution trabecular path against Scanco IPL's maximal-inscribed-sphere standard [4] reduced measurement bias from 0.1174 mm to 0.0194 mm (&lt;1 voxel at 20 &mu;m) while keeping clinical CT scans cleanly guarded against partial-volume fabrication [5].
+  </p>
+  <p>
+    <strong>Limitations:</strong> First, the public Zenodo cohorts evaluated here provide cross-sectional anatomy and admission fracture images (zero paired longitudinal follow-up CT and physiotherapy trajectories), restricting current validation to quantitative accuracy and system workflow rather than prognostic outcome prediction. Second, uncalibrated clinical HU requires phantom standardization [6] before reporting volumetric BMD. Third, prospective institutional ethics protocols and multi-reader orthopedic/physiotherapy validation remain necessary prior to clinical deployment.
+  </p>
+
+  <h2 class="sec">5. Conclusion</h2>
+  <p>
+    BONE-MAP integrates 3D tibial cortical morphometry, multi-modal tibial plateau fracture review, and structured physiotherapy outcome logging inside an auditable open-source architecture governed by physical resolution and calibration guardrails. Validated across 18 lower-limb CTs, 20 &mu;m micro-CT, and 186 tibial plateau fracture records, the platform offers a physically honest technical foundation for future longitudinal fracture-rehabilitation research.
+  </p>
+
+  <h2 class="sec">References</h2>
+  <ol class="refs">
+    <li>Wasserthal J, Breit HC, Meyer MT, Pradella M, Hinck D, Sauter AW, et al. TotalSegmentator: Robust segmentation of 104 anatomic structures in CT images. <em>Radiology: Artificial Intelligence</em>. 2023;5(5):e230024. https://doi.org/10.1148/ryai.230024</li>
+    <li>Whelan DB, Bhandari M, Stephen D, Kreder H, McKee MD, Zdero R, et al. Development of the Radiographic Union Score for Tibial Fractures for the assessment of tibial fracture healing after intramedullary fixation. <em>J Trauma</em>. 2010;68(3):629–632. https://doi.org/10.1097/TA.0b013e3181a7c16d</li>
+    <li>Litrenta J, Tornetta P, Mehta S, Jones CB, O'Toole RV, Bhandari M, et al. Determination of radiographic healing: an assessment of consistency using RUST and Modified RUST in metadiaphyseal fractures. <em>J Orthop Trauma</em>. 2015;29(11):516–520. https://doi.org/10.1097/BOT.0000000000000390</li>
+    <li>Hildebrand T, R&uuml;egsegger P. A new method for the model-independent assessment of thickness in three-dimensional images. <em>J Microsc</em>. 1997;185(1):67–75. https://doi.org/10.1046/j.1365-2818.1997.1340694.x</li>
+    <li>Whittier DE, Boyd SK, Burghardt AJ, Paccou J, Ghasem-Zadeh A, Chapurlat R, et al. Guidelines for the assessment of bone density and microarchitecture in vivo using high-resolution peripheral quantitative computed tomography. <em>Osteoporos Int</em>. 2020;31(9):1607–1627. https://doi.org/10.1007/s00198-020-05438-5</li>
+    <li>Engelke K, Adams JE, Armbrecht G, Augat P, Bogado CE, Bouxsein ML, et al. Clinical use of quantitative computed tomography and peripheral quantitative computed tomography in the management of osteoporosis in adults: the 2007 ISCD Official Positions. <em>J Clin Densitom</em>. 2008;11(1):123–162. https://doi.org/10.1016/j.jocd.2007.12.010</li>
+    <li>Fedorov A, Beichel R, Kalpathy-Cramer J, Finet J, Fillion-Robin JC, Pujol S, et al. 3D Slicer as an image computing platform for the Quantitative Imaging Network. <em>Magn Reson Imaging</em>. 2012;30(9):1323–1341. https://doi.org/10.1016/j.mri.2012.05.001</li>
+    <li>Lowekamp BC, Chen DT, Ib&aacute;&ntilde;ez L, Blezek D. The design of SimpleITK. <em>Front Neuroinform</em>. 2013;7:45. https://doi.org/10.3389/fninf.2013.00045</li>
+    <li>Binkley JM, Stratford PW, Lott SA, Riddle DL. The Lower Extremity Functional Scale (LEFS): scale development, measurement properties, and clinical application. <em>Phys Ther</em>. 1999;79(4):371–383. https://doi.org/10.1093/ptj/79.4.371</li>
+    <li>VSDFullBody Whole-Body and Lower-Limb CT Dataset and Reference 3D Slicer Segmentations. Zenodo. Records 8270365 and 8302449.</li>
+    <li>PlaTiF: Tibial Plateau Fracture Radiographs, Tibia Masks, and Coronal CT Dataset (Parts 1–5). Zenodo. Record 18007397.</li>
+    <li>ORMIR Standard Micro-CT Specimen Dataset (CHAR_NOCMP_020.AIM). Zenodo. Record 21284559.</li>
+    <li>PENGWIN26: Pelvic Fracture CT and Fragment Segmentation Benchmark. Zenodo. Record 19734383.</li>
+  </ol>
+</body>
+</html>

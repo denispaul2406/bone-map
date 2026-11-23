@@ -1,0 +1,32 @@
+[
+  {
+    "person_or_org": {
+      "type": "personal",
+      "family_name": "Paul",
+      "given_name": "Denis",
+      "identifiers": [
+        {
+          "scheme": "orcid",
+          "identifier": "0009-0008-1525-6822"
+        }
+      ]
+    },
+    "affiliations": [
+      {
+        "name": "Independent Researcher, Bengaluru, Karnataka, India"
+      }
+    ]
+  },
+  {
+    "person_or_org": {
+      "type": "personal",
+      "family_name": "Madapushi Deepak",
+      "given_name": "Esha"
+    },
+    "affiliations": [
+      {
+        "name": "College of Physiotherapy, Dayananda Sagar University, Bengaluru, Karnataka, India"
+      }
+    ]
+  }
+]
